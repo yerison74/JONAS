@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Vitae - Jonas Gutierrez</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #2c3e50;
+            --background-color: #f4f4f4;
+            --text-color: #333;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            background-color: var(--background-color);
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+        }
+
+        .profile-info {
+            width: 100%;
+            text-align: center;
+        }
+
+        .profile-picture-container {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            overflow: hidden;
+            border: 4px solid white;
+            margin: 0 auto 20px;
+        }
+
+        .profile-picture {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        h2 {
+            color: var(--secondary-color);
+            border-bottom: 2px solid var(--primary-color);
+            padding-bottom: 10px;
+            margin-top: 30px;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .experience-item, .education-item {
+            margin-bottom: 20px;
+        }
+        .experience-item h3, .education-item h3 {
+            margin-bottom: 5px;
+        }
+        .experience-item p, .education-item p {
+            margin: 0;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list li {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+        .contact-info p {
+            margin: 0;
+            background-color: var(--secondary-color);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            header {
+                padding: 10px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            .profile-picture-container {
+                width: 150px;
+                height: 150px;
+            }
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+            }
+            .skills-list {
+                justify-content: center;
+            }
+        }
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 1.8em;
+            }
+            h2 {
+                font-size: 1.5em;
+            }
+            .profile-picture-container {
+                width: 120px;
+                height: 120px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="profile-info">
+                <div class="profile-picture-container">
+                    <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/WhatsApp%20Image%202024-11-13%20at%2011.19.12%20AM-X7MTbVjY4Ao3JIZ94QXgWaCEoBaSxb.jpeg" alt="Foto de Jonas Gutierrez" class="profile-picture">
+                </div>
+                <h1>JONAS GUTIERREZ</h1>
+                <p>INGENIERO EN SOFTWARE</p>
+            </div>
+        </header>
+
+        <div class="section">
+            <h2>CONTACTOS</h2>
+            <div class="contact-info">
+                <p>📞 829-266-3432</p>
+                <p>✉️ Jonasbfm08@gmail.com</p>
+                <p>📍 Calle #28, ensanche la fe</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>EXPERIENCIA LABORAL</h2>
+            <div class="experience-item">
+                <h3>DUSA</h3>
+                <p><strong>Puesto:</strong> Soporte técnico Informática</p>
+                <p><strong>Fecha:</strong> JUL 2023 - Actual</p>
+            </div>
+            <div class="experience-item">
+                <h3>Acquire BPO</h3>
+                <p><strong>Puesto:</strong> Moderación de análisis/Informática</p>
+                <p><strong>Fecha:</strong> Jun 2021 - Mar 2023</p>
+            </div>
+            <div class="experience-item">
+                <h3>Republica Digital</h3>
+                <p><strong>Puesto:</strong> Soporte técnico-informática</p>
+                <p><strong>Fecha:</strong> Sep 2020 – Dic 2020</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>EDUCACIÓN</h2>
+            <div class="education-item">
+                <h3>Universidad APEC</h3>
+                <p><strong>Título:</strong> Graduado de ingeniería de software</p>
+                <p><strong>Fecha:</strong> 2016 – 2023</p>
+            </div>
+            <div class="education-item">
+                <h3>Instituto tecnológico de artes y oficio</h3>
+                <p><strong>Nivel:</strong> 1ro – 4to técnico en electrónica digital, informática</p>
+                <p><strong>Fecha:</strong> 2012 - 2016</p>
+            </div>
+            <div class="education-item">
+                <h3>Casa de la providencia</h3>
+                <p><strong>Nivel:</strong> Educación básica</p>
+                <p><strong>Fecha:</strong> 2002 – 2012</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>CONOCIMIENTOS ADQUIRIDOS</h2>
+            <h3>BASE DE DATOS</h3>
+            <ul class="skills-list">
+                <li>SQL Server</li>
+                <li>MySQL</li>
+            </ul>
+            <h3>HERRAMIENTAS</h3>
+            <ul class="skills-list">
+                <li>Power BI</li>
+                <li>Paquete Office</li>
+            </ul>
+            <h3>PROGRAMACIÓN</h3>
+            <ul class="skills-list">
+                <li>C#</li>
+                <li>HTML</li>
+                <li>CSS</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>REFERENCIAS</h2>
+            <ul>
+                <li>Yamilia Castillo: 809-838-0388</li>
+                <li>Yerison Javier: 829-265-2082</li>
+                <li>Luis Suarez: 829-909-4443</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
